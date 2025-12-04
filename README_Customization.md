@@ -1,7 +1,7 @@
 
 # Customization: RobotArmHelix Update
 
-You can skip to [Usage](#usage) if not interested in details of customization.
+You can **skip to [Usage](#usage)** if not interested in details of customization.
 
 The RobotArmHelix project has been updated such that it can be built and run. The C# project file (`.csproj`) was changed to the new SDK-style to make changes easier. The project was upgraded to .NET Framework 4.8, which is supported and can easily be targeted on Windows computers. Source code has not been changed except for the part where robot models are locates. This part was modified to be more robust, and finds models through location of executable (motels are copied to the directory of executable during build process).
 
@@ -18,13 +18,10 @@ The following components were used in this customization:
 ## Usage
 
 * Clone the [iglibmodules container repository](https://github.com/ajgorhoe/iglibmodules) and checkout the branch `swrepos/GrLib/repoMain`
-* Run scripts that will clone individual components checked out at appropriate references (branches):
+* Run the PowerShell script `GrLibUpdateRepoGroup_RobotArmHelix.ps1` that will clone individual components checked out at appropriate references (branches). Alternatively, you can run individual cloning scripts:
 
-  * `GrLibUpdateRepo_HelixToolkitForRobotArm.ps1` - clones the `Helix Toolkit` and checks out the appropriate branch
+  * `GrLibUpdateRepo_HelixToolkitForRobotArm.ps1` - clones the `Helix Toolkit` repository used by RobotArmHelix and checks out the appropriate branch
   * `GrLibUpdateRepo_RobotArmHelix.ps1` - clones the RoboArmHelix project and checks out the appropriate customization branch
-  * Open the `RobotArmHelx` solution in Visual Studio, build it, and run the application. The solution is located at `RobotArmHelix\RobotArmHelix\RobotArmHelix.sln`
+* Open the `RobotArmHelx` solution in Visual Studio, build it, and run the application. The solution is located at `RobotArmHelix\RobotArmHelix.sln`
 
-Expected path of the robot model:
-
-> RobotArmHelix\RobotArmHelix\RobotArmHelix\bin\3D_Models\IRB6700-MH3_245-300_IRC5_rev02_LINK01_CAD.stl
 
