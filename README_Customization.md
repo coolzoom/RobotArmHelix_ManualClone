@@ -24,4 +24,7 @@ The following components were used in this customization:
   * `GrLibUpdateRepo_RobotArmHelix.ps1` - clones the RoboArmHelix project and checks out the appropriate customization branch
 * Open the `RobotArmHelx` solution in Visual Studio, build it, and run the application. The solution is located at `RobotArmHelix\RobotArmHelix.sln`
 
+If you want to do cloning **manually**, make sure to clone both repositories in the same directory, side by side:
 
+* Clone the Helix Toolkit [from this fork](https://github.com/ajgorhoe/helix-toolkit) in the `helix-toolkit-forRobotArm` directory and switch to the `00IGLib/25_12_03_CustomizingOldCommitForRobotArm_7049fa` branch
+* Clone the RobotArmHelix project [from this fork](https://github.com/ajgorhoe/RobotArmHelix) (or [from the original repo](https://github.com/Gabryxx7/RobotArmHelix), after changes are pulled in) in the `RobotArmHelix` directory and switch to the `swrepos/GrLib/repoMain` branch (or to the `master`branch, after changes are merged).
