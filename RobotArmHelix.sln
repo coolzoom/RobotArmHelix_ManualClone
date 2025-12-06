@@ -16,8 +16,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_Solutionitems", "0_Soluti
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelixToolkit", "..\helix-toolkit-forRobotArm\Source\HelixToolkit\HelixToolkit.csproj", "{7C0E987E-CC34-4B19-BA6B-B381AEABB530}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E7662A0A-928B-8AB0-D486-998EE2A41619} = {E7662A0A-928B-8AB0-D486-998EE2A41619}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelixToolkit.Wpf", "..\helix-toolkit-forRobotArm\Source\HelixToolkit.Wpf\HelixToolkit.Wpf.csproj", "{3F3B4548-A9DB-4874-86F7-E7C4FEC8A351}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E7662A0A-928B-8AB0-D486-998EE2A41619} = {E7662A0A-928B-8AB0-D486-998EE2A41619}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_Solutionitems_RobotArmHelix", "0_Solutionitems_RobotArmHelix", "{21612A95-4CEF-49C4-8E4F-2CAA1956FCBA}"
 	ProjectSection(SolutionItems) = preProject
