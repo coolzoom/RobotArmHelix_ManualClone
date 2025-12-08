@@ -30,7 +30,9 @@ $UpdatingScriptPath = "./UpdateOrCloneRepository.ps1"
 #    in the same order as that script's parameters:
 
 $global:CurrentRepo_Directory = "../../helix-toolkit-forRobotArm/"
-$global:CurrentRepo_Ref = version_3.1.2
+$global:CurrentRepo_Ref = "version_3.1.2"
+
+# "version_3.1.2" branch: adapted from tag v3.1.2
 
 # Commit that works with the adapted original version of RobotArmHelix:
 # "00IGLib/25_12_03_CustomizingOldCommitForRobotArm_7049fa"
