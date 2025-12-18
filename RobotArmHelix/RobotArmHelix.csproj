@@ -3,7 +3,7 @@
 		<!--
 		<TargetFrameworks>net10.0-windows;net8.0-windows;net48</TargetFramework>
 		-->
-		<TargetFrameworks>net10.0-windows;net8.0-windows;net48</TargetFrameworks>
+		<TargetFrameworks>net8.0-windows;net48</TargetFrameworks>
 		<UseWPF>true</UseWPF>
 		<UseWindowsForms>true</UseWindowsForms>
 		<OutputType>WinExe</OutputType>
@@ -31,19 +31,13 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\0InitModules\InitModule\InitModule.csproj"
-			ReferenceOutputAssembly="false" PrivateAssets="All"  />
+	  <PackageReference Include="HelixToolkit.Wpf" Version="2.27.3" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<Reference Include="System.Windows.Forms" />
 	</ItemGroup>
 
-	<ItemGroup>
-		<!-- Project references to HelixToolkit source code: -->
-		<ProjectReference Include="..\..\helix-toolkit-forRobotArm\Source\HelixToolkit.Wpf\HelixToolkit.Wpf.csproj" />
-		<ProjectReference Include="..\..\helix-toolkit-forRobotArm\Source\HelixToolkit\HelixToolkit.csproj" />
-	</ItemGroup>
 
 	<!-- Referencing HelixToolkit via NuGet package instead of project reference:
 	<ItemGroup>

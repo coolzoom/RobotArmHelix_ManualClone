@@ -401,6 +401,8 @@ namespace RobotArmHelix
         {
             try
             {
+                if (TbX == null || TbY == null || TbZ == null || geom == null)
+                    return;
                 reachingPoint = new Vector3D(Double.Parse(TbX.Text), Double.Parse(TbY.Text), Double.Parse(TbZ.Text));
                 geom.Transform = new TranslateTransform3D(reachingPoint);
             }
